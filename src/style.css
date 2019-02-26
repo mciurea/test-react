@@ -1,0 +1,141 @@
+body {
+  font-family: "Ubuntu", sans-serif;
+  visibility: visible !important;
+  overflow: auto !important;
+}
+
+.app {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  justify-content: center;
+  grid-row-gap: 5em;
+}
+
+.card {
+  padding: 5px;
+  display: grid;
+  width: 80%;
+  grid-template-columns: 20% 4em auto 11% 7%;
+  grid-template-rows: 15% 35% 10% auto;
+  justify-items: stretch;
+  align-items: stretch;
+  justify-content: space-around;
+  align-content: space-around;
+  grid-column-gap: 3px;
+  grid-row-gap: 0px;
+  min-height: 15em;
+  min-width: 76em;
+}
+
+.card-img {
+  max-width: 100%;
+  display: block;
+  grid-column: 1;
+  grid-row: 1 / 5;
+  justify-self: center;
+  align-self: center;
+  border: 1px solid #e1e1e1;
+}
+
+.name {
+  grid-column: 2/4;
+  grid-row: 1/3;
+  align-self: start;
+  justify-self: start;
+  font-size: 2.1em;
+  font-weight: 900;
+  margin: 0px;
+  text-indent: 0.4em;
+}
+
+.fav-icon {
+  grid-column: 2/3;
+  grid-row: 3/4;
+  cursor: pointer;
+  justify-self: center;
+  align-self: center;
+  font-size: 2em;
+}
+
+.fav-icon i:before {
+  font-size: 30px;
+  color: #888888;
+  transition: 0.3s ease all;
+  margin-left: 0;
+}
+
+.fav-icon:hover i:before {
+  color: #449eec;
+}
+
+.fav-icon.fav i:before {
+  color: #449eec;
+}
+
+.subtitle {
+  grid-column: 3/4;
+  grid-row: 3/4;
+  align-self: center;
+  font-size: 1.7em;
+}
+
+.subtitle .supplier {
+  font-weight: 600;
+}
+
+.description {
+  grid-column: 2/4;
+  grid-row: 4 / 5;
+  font-size: 1.5em;
+  align-self: flex-end;
+  padding-left: 0.7em;
+}
+
+.right-icon {
+  grid-column: 4/6;
+  grid-row: 4 / 5;
+  align-self: flex-end;
+  justify-self: center;
+  background: #449eec;
+  padding: 25px 90px 9px;
+  border-top-left-radius: 80px;
+  border-top-right-radius: 80px;
+  border-bottom-left-radius: 80px;
+  border-bottom-right-radius: 80px;
+  cursor: pointer;
+  transition: 0.3s ease all;
+}
+.right-icon:hover {
+  background: #2f77b5;
+}
+.right-icon i:before {
+  margin-left: 0;
+  font-size: 50px;
+  color: #fff;
+}
+
+.price {
+  grid-column: 5/6;
+  grid-row: 1;
+  justify-self: flex-start;
+  align-self: flex-end;
+  font-size: 1.8em;
+  font-weight: 700;
+}
+
+.each {
+  grid-column: 5/6;
+  grid-row: 2;
+  justify-self: flex-start;
+  align-self: flex-start;
+  font-size: 1.3em;
+}
+
+.currency {
+  grid-column: 4/5;
+  grid-row: 1;
+  justify-self: flex-end;
+  align-self: flex-end;
+  font-size: 1.3em;
+}
